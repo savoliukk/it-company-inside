@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Про автора • Inside IT</title>
+  <meta name="description" content="Інформація про автора навчального проєкту." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до основного контенту</a>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="На головну">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="28" height="28">
+            <path d="M10 12h28v6H10zM10 22h18v6H10zM10 32h28v6H10z"></path>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>Inside IT</strong>
+          <small>Про автора</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__icon" aria-hidden="true"></span>
+        <span class="nav-toggle__text">Меню</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html">Головна</a>
+        <a href="roles.html">Ролі</a>
+        <a href="processes.html">Процеси</a>
+        <a href="teamwork.html">Командна робота</a>
+        <a href="tools.html">Інструменти</a>
+        <a href="career.html">Кар’єра</a>
+        <a href="sources.html">Джерела</a>
+        <a href="about.html">Про автора</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <div class="page-head">
+        <h1>Про автора</h1>
+      </div>
+
+      <section class="profile">
+        <div class="profile__avatar" aria-hidden="true">
+          <!-- Simple vector avatar placeholder -->
+          <svg viewBox="0 0 64 64" width="64" height="64">
+            <circle cx="32" cy="24" r="14"></circle>
+            <path d="M10 60c3-14 16-18 22-18s19 4 22 18"></path>
+          </svg>
+        </div>
+
+        <div class="profile__info">
+          <h2 class="h3">Саволюк Микола Миколайович</h2>
+          <p class="muted">Група: <strong>4KH-25б</strong></p>
+          <p class="muted">Дисципліна: <strong>Вступ до фаху</strong>, індивідуальне №2</p>
+
+          <div class="card card--flat mt">
+            <h3 class="h4">Коротко про роботу</h3>
+            <p class="muted">
+              Я розробив багатосторінковий сайт на тему “Як працює ІТ-компанія зсередини”.
+              На сторінках зібрані ролі, базові процеси, командні практики, інструменти та кар’єрні траєкторії.
+            </p>
+          </div>
+
+          <div class="card card--flat mt">
+            <h3 class="h4">Контакти</h3>
+            <ul class="list">
+              <li>Email: <span class="muted">msavoliuk@gmail.com</span></li>
+              <li>GitHub: <span class="muted">github.com/savoliukk</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="section__actions mt-xl">
+        <a class="btn btn--primary" href="index.html">На головну</a>
+        <a class="btn btn--ghost" href="sources.html">Джерела</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>Inside IT</strong>
+        <div class="muted">Про автора</div>
+      </div>
+      <div class="footer__links">
+        <a href="sources.html">Джерела</a>
+      </div>
+      <div class="muted">© <span data-year></span></div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Повернутися вгору">↑</button>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

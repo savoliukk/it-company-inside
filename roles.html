@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ролі в ІТ-компанії • Inside IT</title>
+  <meta name="description" content="Основні ролі в ІТ-команді: PM, PO, BA, Dev, QA, DevOps, UX/UI, Tech Lead." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до основного контенту</a>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="На головну">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="28" height="28">
+            <path d="M10 12h28v6H10zM10 22h18v6H10zM10 32h28v6H10z"></path>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>Inside IT</strong>
+          <small>Ролі</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__icon" aria-hidden="true"></span>
+        <span class="nav-toggle__text">Меню</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html">Головна</a>
+        <a href="roles.html">Ролі</a>
+        <a href="processes.html">Процеси</a>
+        <a href="teamwork.html">Командна робота</a>
+        <a href="tools.html">Інструменти</a>
+        <a href="career.html">Кар’єра</a>
+        <a href="sources.html">Джерела</a>
+        <a href="about.html">Про автора</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <div class="page-head">
+        <h1>Ролі в ІТ-компанії</h1>
+        <p class="lead">
+          Роль — це не “посада заради посади”, а <strong>набір відповідальностей</strong>.
+          Команда працює ефективно, коли зрозуміло: хто приймає рішення, хто виконує, хто перевіряє і хто підтримує.
+        </p>
+      </div>
+
+      <section class="grid-2">
+        <div class="callout">
+          <h2 class="h3">Ключова ідея</h2>
+          <p class="muted">
+            Кожна роль створює артефакт: опис задачі, дизайн, код, тест-звіт, реліз, документацію.
+            Артефакти “переходять” між ролями і складаються у продукт.
+          </p>
+          <ul class="checklist">
+            <li>Чітка зона відповідальності</li>
+            <li>Прозора комунікація</li>
+            <li>Єдині критерії якості</li>
+          </ul>
+        </div>
+
+        <div class="media-card">
+          <img src="assets/img/office.jpg" alt="Офіс/зустріч команди (плейсхолдер)" loading="lazy" />
+        </div>
+      </section>
+
+      <h2 class="mt-xl">Ролі</h2>
+      <p class="muted">Натисни на роль — відкриється опис. Це реалізовано через універсальний JS-акордеон.</p>
+
+      <div class="accordion" data-accordion>
+        <div class="accordion__item">
+          <button class="accordion__button" aria-expanded="false">
+            <span>Project Manager (PM)</span>
+            <span class="accordion__chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="accordion__panel" hidden>
+            <p><strong>Що робить:</strong> планує роботу, координує людей, знімає блокери, слідкує за ризиками і дедлайнами.</p>
+            <p><strong>З ким взаємодіє:</strong> з усією командою + стейкхолдерами.</p>
+            <p><strong>Результат:</strong> план/статус, прозорі домовленості, прогноз по термінах.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__button" aria-expanded="false">
+            <span>Product Owner (PO) / Product Manager</span>
+            <span class="accordion__chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="accordion__panel" hidden>
+            <p><strong>Що робить:</strong> визначає цінність продукту, пріоритезує backlog, формулює цілі й метрики.</p>
+            <p><strong>З ким взаємодіє:</strong> бізнес, користувачі, команда.</p>
+            <p><strong>Результат:</strong> roadmap, пріоритети, чіткі “що будуємо і навіщо”.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__button" aria-expanded="false">
+            <span>Business Analyst (BA)</span>
+            <span class="accordion__chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="accordion__panel" hidden>
+            <p><strong>Що робить:</strong> збирає вимоги, уточнює правила, описує сценарії, готує acceptance criteria.</p>
+            <p><strong>З ким взаємодіє:</strong> PO/PM, користувачі, Dev/QA.</p>
+            <p><strong>Результат:</strong> зрозумілий опис задачі, зменшення “не так зрозуміли”.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__button" aria-expanded="false">
+            <span>UI/UX Designer</span>
+            <span class="accordion__chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="accordion__panel" hidden>
+            <p><strong>Що робить:</strong> проектує інтерфейс, user flow, створює макети, думає про зручність.</p>
+            <p><strong>З ким взаємодіє:</strong> PO/BA, Dev, іноді користувачі (тести).</p>
+            <p><strong>Результат:</strong> дизайн-макети, компоненти, гайдлайни.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__button" aria-expanded="false">
+            <span>Software Developer (Dev)</span>
+            <span class="accordion__chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="accordion__panel" hidden>
+            <p><strong>Що робить:</strong> пише код, інтегрує API, фіксить баги, робить PR і проходить review.</p>
+            <p><strong>З ким взаємодіє:</strong> Dev/Tech Lead, QA, BA/PO.</p>
+            <p><strong>Результат:</strong> реалізована функціональність, pull request, технічна документація (за потреби).</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__button" aria-expanded="false">
+            <span>QA Engineer (Tester)</span>
+            <span class="accordion__chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="accordion__panel" hidden>
+            <p><strong>Що робить:</strong> перевіряє, що продукт працює як очікується; пише тест-кейси, заводить баги.</p>
+            <p><strong>З ким взаємодіє:</strong> Dev, BA, PO/PM.</p>
+            <p><strong>Результат:</strong> баг-репорти, тест-звіти, підтвердження якості релізу.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__button" aria-expanded="false">
+            <span>DevOps / SRE</span>
+            <span class="accordion__chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="accordion__panel" hidden>
+            <p><strong>Що робить:</strong> автоматизація деплою, CI/CD, моніторинг, інфраструктура, стабільність.</p>
+            <p><strong>З ким взаємодіє:</strong> Dev, Tech Lead, Security.</p>
+            <p><strong>Результат:</strong> швидкі й безпечні релізи, спостережуваність системи.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__button" aria-expanded="false">
+            <span>Tech Lead / Architect</span>
+            <span class="accordion__chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="accordion__panel" hidden>
+            <p><strong>Що робить:</strong> приймає технічні рішення, визначає архітектуру, “тягне” складні задачі, менторить.</p>
+            <p><strong>З ким взаємодіє:</strong> Dev-команда, DevOps, інколи PO/PM.</p>
+            <p><strong>Результат:</strong> технічна стратегія, якісні рішення, узгоджені стандарти коду.</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="section section--alt mt-xl">
+        <div class="container">
+          <h2>Швидка “карта взаємодії”</h2>
+          <p class="muted">Спрощено: хто найчастіше з ким комунікує.</p>
+
+          <div class="matrix">
+            <div class="matrix__row"><strong>PO/BA</strong> → Dev, QA, UX</div>
+            <div class="matrix__row"><strong>PM</strong> → всі ролі + стейкхолдери</div>
+            <div class="matrix__row"><strong>UX</strong> → PO/BA, Dev</div>
+            <div class="matrix__row"><strong>Dev</strong> → Dev, QA, DevOps</div>
+            <div class="matrix__row"><strong>QA</strong> → Dev, BA</div>
+            <div class="matrix__row"><strong>DevOps</strong> → Dev, Tech Lead</div>
+          </div>
+
+          <div class="section__actions">
+            <a class="btn btn--primary" href="processes.html">Далі: процеси</a>
+            <a class="btn btn--ghost" href="teamwork.html">Далі: командна робота</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>Inside IT</strong>
+        <div class="muted">Ролі та відповідальності</div>
+      </div>
+      <div class="footer__links">
+        <a href="sources.html">Джерела</a>
+        <a href="about.html">Про автора</a>
+      </div>
+      <div class="muted">© <span data-year></span></div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Повернутися вгору">↑</button>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

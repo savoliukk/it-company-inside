@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Процеси в ІТ • Inside IT</title>
+  <meta name="description" content="Scrum/Kanban, SDLC, code review, релізи та якість." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до основного контенту</a>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="На головну">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="28" height="28">
+            <path d="M10 12h28v6H10zM10 22h18v6H10zM10 32h28v6H10z"></path>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>Inside IT</strong>
+          <small>Процеси</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__icon" aria-hidden="true"></span>
+        <span class="nav-toggle__text">Меню</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html">Головна</a>
+        <a href="roles.html">Ролі</a>
+        <a href="processes.html">Процеси</a>
+        <a href="teamwork.html">Командна робота</a>
+        <a href="tools.html">Інструменти</a>
+        <a href="career.html">Кар’єра</a>
+        <a href="sources.html">Джерела</a>
+        <a href="about.html">Про автора</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <div class="page-head">
+        <h1>Процеси в ІТ-компанії</h1>
+        <p class="lead">
+          Процес — це “дорога”, по якій задача доходить до релізу без хаосу.
+          Добрі процеси роблять роботу <strong>передбачуваною</strong>, а якість — <strong>контрольованою</strong>.
+        </p>
+      </div>
+
+      <section class="grid-2">
+        <div class="card card--flat">
+          <h2 class="h3">Scrum vs Kanban (дуже коротко)</h2>
+          <div class="table-wrap" role="region" aria-label="Порівняння Scrum та Kanban" tabindex="0">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Критерій</th>
+                  <th>Scrum</th>
+                  <th>Kanban</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Планування</td>
+                  <td>Спринти (1–2 тижні)</td>
+                  <td>Без спринтів, потік задач</td>
+                </tr>
+                <tr>
+                  <td>Фокус</td>
+                  <td>Комітмент на спринт</td>
+                  <td>Ліміти WIP та швидкість потоку</td>
+                </tr>
+                <tr>
+                  <td>Ритуали</td>
+                  <td>Planning / Daily / Review / Retro</td>
+                  <td>Менше “обов’язкових” церемоній</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="muted mt">На практиці компанії часто міксують підхід під команду.</p>
+        </div>
+
+        <div class="card card--flat">
+          <h2 class="h3">Ритуали Scrum</h2>
+          <ul class="list">
+            <li><strong>Planning</strong> — команда бере задачі у спринт і домовляється про план.</li>
+            <li><strong>Daily</strong> — коротка синхронізація: що зробив, що роблю, що заважає.</li>
+            <li><strong>Review</strong> — демонстрація результату зацікавленим сторонам.</li>
+            <li><strong>Retro</strong> — обговорення: що покращити в процесі.</li>
+          </ul>
+          <p class="muted">Суть — регулярний цикл “план → зробили → показали → покращили”.</p>
+        </div>
+      </section>
+
+      <section class="section section--alt mt-xl">
+        <div class="container">
+          <h2>SDLC: шлях задачі (спрощена схема)</h2>
+
+          <div class="timeline" aria-label="Етапи SDLC">
+            <div class="timeline__item">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div>
+                <strong>Аналіз</strong>
+                <div class="muted">BA/PO уточнюють вимоги й критерії</div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div>
+                <strong>Дизайн</strong>
+                <div class="muted">UX/UI готує макети та user flow</div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div>
+                <strong>Розробка</strong>
+                <div class="muted">Dev реалізує, пушить у Git, робить PR</div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div>
+                <strong>Code Review</strong>
+                <div class="muted">перевірка коду, стандарти, безпека</div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div>
+                <strong>Тестування</strong>
+                <div class="muted">QA перевіряє сценарії, фіксує баги</div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div>
+                <strong>Реліз</strong>
+                <div class="muted">CI/CD, деплой, моніторинг</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout mt">
+            <h3 class="h4">Definition of Done (DoD)</h3>
+            <p class="muted">
+              Це “контрольний список”, який означає, що задача справді готова:
+              код у main, пройшов review, тести зелені, документація/нотатки додані, ризики враховані.
+            </p>
+          </div>
+
+          <div class="section__actions">
+            <a class="btn btn--primary" href="tools.html">Які інструменти це підтримують</a>
+            <a class="btn btn--ghost" href="teamwork.html">Як команда домовляється</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>Inside IT</strong>
+        <div class="muted">Процеси та якість</div>
+      </div>
+      <div class="footer__links">
+        <a href="sources.html">Джерела</a>
+        <a href="about.html">Про автора</a>
+      </div>
+      <div class="muted">© <span data-year></span></div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Повернутися вгору">↑</button>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

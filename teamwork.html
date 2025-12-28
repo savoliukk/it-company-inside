@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Командна робота • Inside IT</title>
+  <meta name="description" content="Комунікація, ритуали, фідбек, конфлікти, синхронізація й командні домовленості." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до основного контенту</a>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="На головну">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="28" height="28">
+            <path d="M10 12h28v6H10zM10 22h18v6H10zM10 32h28v6H10z"></path>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>Inside IT</strong>
+          <small>Командна робота</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__icon" aria-hidden="true"></span>
+        <span class="nav-toggle__text">Меню</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html">Головна</a>
+        <a href="roles.html">Ролі</a>
+        <a href="processes.html">Процеси</a>
+        <a href="teamwork.html">Командна робота</a>
+        <a href="tools.html">Інструменти</a>
+        <a href="career.html">Кар’єра</a>
+        <a href="sources.html">Джерела</a>
+        <a href="about.html">Про автора</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <div class="page-head">
+        <h1>Командна робота</h1>
+        <p class="lead">
+          Команда в ІТ — це не просто “люди поруч”, а система взаємодії.
+          Сильна командна робота — це <strong>домовленості</strong>, <strong>ритуали</strong> і <strong>довіра</strong>.
+        </p>
+      </div>
+
+      <section class="grid-2">
+        <div class="media-card">
+          <img src="assets/img/teamwork.jpg" alt="Команда на синку/мітингу (плейсхолдер)" loading="lazy" />
+        </div>
+
+        <div class="card card--flat">
+          <h2 class="h3">Типові канали взаємодії</h2>
+          <ul class="list">
+            <li><strong>Чати</strong> — швидкі питання/відповіді, узгодження дрібниць.</li>
+            <li><strong>Мітинги</strong> — рішення, планування, розбір ризиків.</li>
+            <li><strong>Документація</strong> — єдине джерело правди (Confluence/Notion).</li>
+            <li><strong>Трекер задач</strong> — статус і відповідальність (Jira/Trello).</li>
+          </ul>
+          <p class="muted">Ціль — зменшити “загубились в чатах” і “ніхто не знає статус”.</p>
+        </div>
+      </section>
+
+      <section class="section section--alt mt-xl">
+        <div class="container">
+          <h2>Командні домовленості (приклади)</h2>
+          <div class="cards">
+            <article class="card">
+              <h3 class="h4">Як ставимо задачі</h3>
+              <p class="muted">Є опис, пріоритет, критерії приймання, відповідальний, дедлайн (якщо потрібен).</p>
+            </article>
+            <article class="card">
+              <h3 class="h4">Як робимо code review</h3>
+              <p class="muted">PR не “висить” довше X годин; коментарі конкретні; правки — маленькими ітераціями.</p>
+            </article>
+            <article class="card">
+              <h3 class="h4">Як даємо фідбек</h3>
+              <p class="muted">Про поведінку/результат, без особистих нападок; з пропозицією наступного кроку.</p>
+            </article>
+            <article class="card">
+              <h3 class="h4">Як реагуємо на інциденти</h3>
+              <p class="muted">Спочатку стабілізуємо, потім робимо postmortem і виправляємо причину, а не симптом.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <h2 class="mt-xl">FAQ</h2>
+
+      <div class="accordion" data-accordion>
+        <div class="accordion__item">
+          <button class="accordion__button" aria-expanded="false">
+            <span>Чому “домовленості” важливіші за “талант”?</span>
+            <span class="accordion__chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="accordion__panel" hidden>
+            <p>Бо без правил команда швидко тоне в хаосі: незрозуміло хто робить, що готово, що пріоритетніше.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__button" aria-expanded="false">
+            <span>Як зменшити кількість мітингів?</span>
+            <span class="accordion__chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="accordion__panel" hidden>
+            <p>Документувати рішення, мати порядок денний, мітинги робити короткими, а статус — у трекері задач.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__button" aria-expanded="false">
+            <span>Що робити, якщо вимоги “пливуть”?</span>
+            <span class="accordion__chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="accordion__panel" hidden>
+            <p>Фіксувати acceptance criteria, робити короткі ітерації, погоджувати зміни через PO/BA, оцінювати вплив.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section__actions mt-xl">
+        <a class="btn btn--primary" href="tools.html">Далі: інструменти</a>
+        <a class="btn btn--ghost" href="career.html">Далі: кар’єра</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>Inside IT</strong>
+        <div class="muted">Командні практики</div>
+      </div>
+      <div class="footer__links">
+        <a href="sources.html">Джерела</a>
+        <a href="about.html">Про автора</a>
+      </div>
+      <div class="muted">© <span data-year></span></div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Повернутися вгору">↑</button>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

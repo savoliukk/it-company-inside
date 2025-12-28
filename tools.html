@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Інструменти • Inside IT</title>
+  <meta name="description" content="Інструменти команди: Jira, Git, CI/CD, чат, документація, моніторинг." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до основного контенту</a>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="На головну">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="28" height="28">
+            <path d="M10 12h28v6H10zM10 22h18v6H10zM10 32h28v6H10z"></path>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>Inside IT</strong>
+          <small>Інструменти</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__icon" aria-hidden="true"></span>
+        <span class="nav-toggle__text">Меню</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html">Головна</a>
+        <a href="roles.html">Ролі</a>
+        <a href="processes.html">Процеси</a>
+        <a href="teamwork.html">Командна робота</a>
+        <a href="tools.html">Інструменти</a>
+        <a href="career.html">Кар’єра</a>
+        <a href="sources.html">Джерела</a>
+        <a href="about.html">Про автора</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <div class="page-head">
+        <h1>Інструменти, без яких команда не “їде”</h1>
+        <p class="lead">
+          Інструменти — це “операційна система” команди: вони зберігають знання, показують статус, автоматизують релізи
+          і допомагають працювати прозоро.
+        </p>
+      </div>
+
+      <section class="grid-2">
+        <div class="media-card">
+          <img src="assets/img/tools.jpg" alt="Інструменти на екранах/дошка задач (плейсхолдер)" loading="lazy" />
+          <div class="media-card__caption">Плейсхолдер: <code>assets/img/tools.jpg</code></div>
+        </div>
+
+        <div class="callout">
+          <h2 class="h3">Що найчастіше є в будь-якій компанії</h2>
+          <ul class="checklist">
+            <li>Трекер задач (Jira/Trello)</li>
+            <li>Git-репозиторій (GitHub/GitLab)</li>
+            <li>CI/CD (автозбірка, автотести, деплой)</li>
+            <li>Комунікація (Slack/Teams)</li>
+            <li>База знань (Confluence/Notion)</li>
+          </ul>
+        </div>
+      </section>
+
+      <h2 class="mt-xl">Категорії інструментів</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3 class="h4">Трекінг задач</h3>
+          <p class="muted">Статуси, пріоритети, відповідальні, дедлайни — щоб не губити роботу.</p>
+          <div class="tags">
+            <span class="tag">Jira</span><span class="tag">Trello</span><span class="tag">YouTrack</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="h4">Контроль версій</h3>
+          <p class="muted">Код зберігається в Git, а зміни проходять через pull request.</p>
+          <div class="tags">
+            <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">GitLab</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="h4">CI/CD</h3>
+          <p class="muted">Автоматизація: збірка, тести, деплой. Менше людських помилок.</p>
+          <div class="tags">
+            <span class="tag">GitHub Actions</span><span class="tag">GitLab CI</span><span class="tag">Jenkins</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="h4">Комунікація</h3>
+          <p class="muted">Чати, дзвінки, канали по темах, швидкі синки.</p>
+          <div class="tags">
+            <span class="tag">Slack</span><span class="tag">Teams</span><span class="tag">Meet</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="h4">Документація</h3>
+          <p class="muted">Опис продукту, рішень, процесів. “Єдине джерело правди”.</p>
+          <div class="tags">
+            <span class="tag">Confluence</span><span class="tag">Notion</span><span class="tag">Wiki</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="h4">Моніторинг</h3>
+          <p class="muted">Метрики, логи, алерти. Щоб релізи були безпечнішими.</p>
+          <div class="tags">
+            <span class="tag">Grafana</span><span class="tag">Prometheus</span><span class="tag">Sentry</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="section__actions mt-xl">
+        <a class="btn btn--primary" href="career.html">Далі: кар’єра</a>
+        <a class="btn btn--ghost" href="sources.html">Джерела</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>Inside IT</strong>
+        <div class="muted">Інструменти і практика</div>
+      </div>
+      <div class="footer__links">
+        <a href="sources.html">Джерела</a>
+        <a href="about.html">Про автора</a>
+      </div>
+      <div class="muted">© <span data-year></span></div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Повернутися вгору">↑</button>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
